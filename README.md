@@ -2,9 +2,9 @@
 
 ## Introduction
 
-The goal is to build a PID (Proportional Integral Differential) controller to drive a car on simulator. 
+The goal is to build a PID (Proportional Integral Differential) controller to drive a car in the simulator. 
 The simulator provides CTE(Cross Track Error), speed and steering angle data via local websocket.
-The PID controll should respond with steering and throttle values to drive the car safely in simulator
+The PID controll should respond with steering and throttle values to drive the car safely in the simulator.
 
 # P, I, D components affection
 * The P (proportional) component computes an steer proportional to the center line which is CTE. Also it controls how fast the system react to error.
@@ -22,7 +22,7 @@ All parameters were tunded manually because wrong parameters quickly lead to unr
   3.1. If slow reactivity is the issue, increase Kp and Ki
   3.2. If oscillations is the issue, Reduce Kp and Ki or brake
 
-I used 0.3 as throttle value 
+After many tries, I stick with 0.12, 0.00, 3.5.
 
 ---
 
